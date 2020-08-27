@@ -33,16 +33,6 @@ namespace Spammy
         {
             MessageBox.Show("You opened file from internet... Dumb");
         }
-
-        private void timer3_Tick(object sender, EventArgs e)
-        {
-            Process[] z = Process.GetProcessesByName("cmd");
-                if (z.Length > 0)
-            {
-                z[0].Kill();
-            }
-        }
-
         
     }
 }
